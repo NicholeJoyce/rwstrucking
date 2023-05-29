@@ -2,18 +2,13 @@
 
 @include 'config.php';
 
-session_start();
-session_unset();
-session_destroy();
-unset($_SESSION);
-header("Location: index.php");
-exit();
+// session_start();
 
-$user_id = $_SESSION['user_id'];
+// $user_id = $_SESSION['user_id'];
 
-if(!isset($user_id)){
-   header('location:login.php');
-};
+// if(!isset($user_id)){
+//    header('location:login.php');
+// };
 
 if(isset($_POST['add_to_wishlist'])){
 
