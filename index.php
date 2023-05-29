@@ -165,7 +165,7 @@ if (isset($_POST['add_to_cart'])) {
    ?>
 
 
-   <center><img src="images/logo.jpg" width="1500" height="500" style="margin-top: 40px"></center>
+   <center><img src="images/logo.jpg" width="1100" height="400" style="margin-top: 40px"></center>
    <section class="products">
       <h1 class="title" style="color: #fff">latest Services</h1>
 

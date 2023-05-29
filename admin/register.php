@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php'; 
+@include '../config.php'; 
 
 if(isset($_POST['submit'])){
 
@@ -43,8 +43,13 @@ if(isset($_POST['submit'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+         background-image: linear-gradient(#A70D2A, #686A6C);
 
+      }
+</style>
 </head>
 <body>
 
@@ -70,7 +75,7 @@ if(isset($message)){
       <input type="password" name="pass" class="box" placeholder="enter your password" required>
       <input type="password" name="cpass" class="box" placeholder="confirm your password" required>
       <input type="submit" class="btn" name="submit" value="register now">
-      <p>already have an account? <a href="login.php">login now</a></p>
+      <p>already have an account? <a href="index.php">login now</a></p>
    </form>
 
 </section>

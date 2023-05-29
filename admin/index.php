@@ -57,7 +57,12 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+         background-image: linear-gradient(#A70D2A, #686A6C);
 
+      }
+</style>
 </head>
 <body>
 
