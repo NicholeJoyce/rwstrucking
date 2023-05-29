@@ -68,7 +68,7 @@ if(isset($message)){
    
 <section class="form-container">
 
-   <form action="" method="post">
+   <form action="index.php" method="post">
       <h3>register now</h3>
       <input type="text" name="name" class="box" placeholder="enter your username" required>
       <input type="email" name="email" class="box" placeholder="enter your email" required>
