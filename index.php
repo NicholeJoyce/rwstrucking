@@ -80,8 +80,8 @@ if (isset($_POST['add_to_cart'])) {
    <style>
       body {
       background-image:linear-gradient(#A70D2A, #686A6C);
-      /* background-repeat: no-repeat;
-      background-position: center; */
+      background-repeat: no-repeat;
+      background-position: center;
     
       font-family: 'Bruno Ace Sc';
 
