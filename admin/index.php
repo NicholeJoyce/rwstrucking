@@ -59,7 +59,10 @@ if(isset($_POST['submit'])){
    <link rel="stylesheet" href="../css/style.css">
 <style>
     body {
-         background-image: linear-gradient(#A70D2A, #686A6C);
+      background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
 
       }
 </style>
@@ -86,7 +89,7 @@ if(isset($message)){
       <input type="email" name="email" class="box" placeholder="enter your email" required>
       <input type="password" name="pass" class="box" placeholder="enter your password" required>
       <input type="submit" class="btn" name="submit" value="login now">
-      <p>don't have an account? <a href="register.php">register now</a></p>
+      <!-- <p>don't have an account? <a href="register.php">register now</a></p> -->
    </form>
 
 </section>

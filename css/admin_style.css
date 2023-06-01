@@ -282,6 +282,17 @@ section{
    box-shadow: var(--box-shadow);
 }
 
+.boxabout{
+   max-width: auto;
+   border-radius: 20px;
+   background-color: var(--black);
+   border:var(--border);
+   padding:2rem;
+   text-align: center;
+   margin:0 auto;
+   box-shadow: var(--box-shadow);
+
+}
 .add-products form h3{
    font-size: 2.5rem;
    text-transform: uppercase;
@@ -499,24 +510,6 @@ section{
 .messages .box-container .box p span{
    color:var(--pink);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries  */
 

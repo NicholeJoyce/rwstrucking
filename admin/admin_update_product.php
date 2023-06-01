@@ -58,6 +58,9 @@ if(isset($_POST['update_product'])){
 <style>
    body{
       background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
    }
 </style>
 </head>

@@ -479,7 +479,7 @@ section{
    text-align: center;
    /* border:var(--border); */
    /* box-shadow: var(--border); */
-   border-radius: 70px;
+   border-radius: 20px;
    background-color: var(--black);
    margin:0 auto;
 }
@@ -487,7 +487,8 @@ section{
 .quick-view form .image{
    height: 33rem;
    border:var(--border);
-   border-radius: 700px;
+   border-radius: 10px;
+   width: auto;
 }
 
 .quick-view form .name{
@@ -514,7 +515,7 @@ section{
    padding:1.2rem 1.4rem;
    font-size: 1.8rem;
    color:var(--black);
-   border-radius: 30px;
+   border-radius: 20px;
    border:var(--border);
    margin:.5rem 0;
 }

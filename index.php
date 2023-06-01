@@ -79,7 +79,11 @@ if (isset($_POST['add_to_cart'])) {
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,900&display=swap" rel="stylesheet">
    <style>
       body {
-         background-image: linear-gradient(#A70D2A, #686A6C);
+      background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+    
+      font-family: 'Bruno Ace Sc';
 
       }
 

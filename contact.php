@@ -50,10 +50,13 @@ if(isset($_POST['send'])){
 
    <style>
     body{
-
-        background-image:linear-gradient(#A70D2A ,#686A6C);
+      background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+    
+    
         font-family: 
-        'Montserrat', sans-serif;
+        'Bruno Ace Sc';
     }
     .header {
          width: 100%;

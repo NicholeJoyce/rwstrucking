@@ -30,7 +30,10 @@ include 'config.php';
     }
     body{
 
-background-image:linear-gradient(#A70D2A ,#686A6C);
+      background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+      /* height: 100vh; */
 font-family: 'Bruno Ace SC';
 }
 .header {
@@ -103,10 +106,7 @@ font-family: 'Bruno Ace SC';
          </nav>
          <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <!-- <div id="user-btn" class="fas fa-user"></div> -->
-         </div>
-      </div>
-
+           
 
    </header>
 </head>
@@ -124,14 +124,42 @@ font-family: 'Bruno Ace SC';
     <div class="flex">
 
         <div class="image">
-            <img src="images/logo.jpg" alt="">
+            <img src="images/logo.jpg" alt="" style="margin-right: 580px">
         </div>
 
         <div class="content-about">
-            <h3>why choose us?</h3>
+            <!-- <h3>why choose us?</h3> -->
             <br>
-            <p>Our trucking service is the result of a relentless pursuit of success. We did not just stumble upon this industry and become an overnight success. No, it took years of hard work, determination, and perseverance to get to where we are today. Starting a business is never easy. We faced many challenges along the way, from financial struggles to operational setbacks. But we never gave up. We kept trying and trying until we found our footing in the trucking industry. We knew that success would not come easy, but we were willing to put in the effort. We worked long hours, made sacrifices, and took risks to build our company from the ground up. And it was not just about making money; we were passionate about the industry and wanted to provide the best possible service to our clients. Through our dedication and hard work, we slowly but surely began to establish ourselves as a reliable and trustworthy trucking service. Our clients started to take notice of our commitment to excellence and began to refer us to others. And now, we are proud to say that we have settled into our place in the trucking industry. But that does not mean we are done striving for success. We are constantly looking for ways to improve and grow, to better serve our clients and to stay ahead of the competition.</p>
-            <a href="contact.php" class="btn">INQUIRE</a>
+            <section class="products">
+      <div class="box-container">
+
+         <?php
+         $select_products = mysqli_query($conn, "SELECT * FROM `about` LIMIT 6") or die('query failed') ;
+         if (mysqli_num_rows($select_products) > 0) {
+             ($fetch_products = mysqli_fetch_assoc($select_products)) 
+         ?>
+               <form action="" method="POST" class="boxabout">
+                  <div class="name" style="   max-width: 1000px;
+   border-radius: 20px;
+   width: 550px;
+   height: auto;
+   border:var(--border);
+   padding:2rem;
+   text-align: center;
+   margin: auto;
+   box-shadow: var(--box-shadow);"><?php echo $fetch_products['aboutcontent']; ?></div>
+               </form>
+         <?php
+            }
+          else {
+            echo '<p class="empty">this page is yet to be updated by the owner!</p>';
+         }
+         ?>
+         </selection>
+
+
+            <!-- <p>Our trucking service is the result of a relentless pursuit of success. We did not just stumble upon this industry and become an overnight success. No, it took years of hard work, determination, and perseverance to get to where we are today. Starting a business is never easy. We faced many challenges along the way, from financial struggles to operational setbacks. But we never gave up. We kept trying and trying until we found our footing in the trucking industry. We knew that success would not come easy, but we were willing to put in the effort. We worked long hours, made sacrifices, and took risks to build our company from the ground up. And it was not just about making money; we were passionate about the industry and wanted to provide the best possible service to our clients. Through our dedication and hard work, we slowly but surely began to establish ourselves as a reliable and trustworthy trucking service. Our clients started to take notice of our commitment to excellence and began to refer us to others. And now, we are proud to say that we have settled into our place in the trucking industry. But that does not mean we are done striving for success. We are constantly looking for ways to improve and grow, to better serve our clients and to stay ahead of the competition.</p> -->
+            <a href="contact.php" class="btn" style=" text-align: center">INQUIRE</a>
         </div>
 
     </div>
@@ -140,102 +168,6 @@ font-family: 'Bruno Ace SC';
     </div>
 
 </section>
-
-<!-- <section class="reviews" id="reviews">
-
-    <h1 class="title">client's reviews</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/pic-1.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-        </div>
-
-        <div class="box">
-            <img src="images/pic-2.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-        </div>
-
-        <div class="box">
-            <img src="images/pic-3.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-        </div>
-
-        <div class="box">
-            <img src="images/pic-4.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-        </div>
-
-        <div class="box">
-            <img src="images/pic-5.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-        </div>
-
-        <div class="box">
-            <img src="images/pic-6.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia animi consequatur nostrum cumque itaque ducimus, iure expedita voluptates. Minima, minus.</p>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h3>john deo</h3>
-        </div>
-
-    </div>
-
-</section> -->
-
-
-
-
-
-
-
-
 
 
 

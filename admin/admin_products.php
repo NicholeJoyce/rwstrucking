@@ -70,18 +70,23 @@ if(isset($_GET['delete'])){
 <style>
    body{
       background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+      /* height: 100vh; */
    }
    .header {
         width: 100%;
         background-color: #333333;
     }
+
 </style>
 </head>
-<body>
+<body >
    
 <?php @include 'admin_headers.php'; ?>
 
-<section class="add-products">
+<section class="add-products" style="margin-top: 100px;">
+
 
    <form action="" method="POST" enctype="multipart/form-data">
       <h3>add new service</h3>
@@ -97,33 +102,33 @@ if(isset($_GET['delete'])){
 
 
 
-<section class="show-products">
+<!-- <section class="show-products">
 
-   <div class="box-container">
+   <div class="box-container"> -->
 
       <?php
-         $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
-         if(mysqli_num_rows($select_products) > 0){
-            while($fetch_products = mysqli_fetch_assoc($select_products)){
+         // $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
+         // if(mysqli_num_rows($select_products) > 0){
+         //    while($fetch_products = mysqli_fetch_assoc($select_products)){
       ?>
-      <div class="box">
-         <!-- <div class="price">$   echo $fetch_products['price']; ?>/-</div> -->
-         <img class="image" src="../uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
-         <div class="name"><?php echo $fetch_products['name']; ?></div>
-         <div class="details"><?php echo $fetch_products['details']; ?></div>
-         <a href="admin_update_product.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
-         <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
-      </div>
+      <!-- <div class="box"> -->
+         <!-- <div class="price">$   echo $fetch_products['price']; ?>/-</div>
+         <img class="image" src="../uploaded_img/<?//php// echo $fetch_products['image']; ?>" alt="">
+         <div class="name"><?php //echo $fetch_products['name']; ?></div>
+         <div class="details"><?php //echo $fetch_products['details']; ?></div>
+         <a href="admin_update_product.php?update=<?//php //echo $fetch_products['id']; ?>" class="option-btn">update</a>
+         <a href="admin_products.php?delete=<?//php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+      </div> -->
       <?php
-         }
-      }else{
-         echo '<p class="empty">no products added yet!</p>';
-      }
+      //    }
+      // }else{
+      //    echo '<p class="empty">no products added yet!</p>';
+      // }
       ?>
-   </div>
+   <!-- </div> -->
    
 
-</section>
+<!-- </section> -->
 
 
 

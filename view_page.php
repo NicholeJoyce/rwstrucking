@@ -76,6 +76,9 @@ if(isset($_POST['add_to_cart'])){
 <style>
     body{
         background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+      /* height: 100vh; */
     }
     .header {
          width: 100%;

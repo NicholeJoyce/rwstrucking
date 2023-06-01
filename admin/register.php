@@ -46,7 +46,10 @@ if(isset($_POST['submit'])){
    <link rel="stylesheet" href="../css/style.css">
 <style>
     body {
-         background-image: linear-gradient(#A70D2A, #686A6C);
+      background-image:linear-gradient(#A70D2A, #686A6C);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
 
       }
 </style>
