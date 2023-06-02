@@ -446,7 +446,7 @@ ul.dropdown-menu li:hover {
    ?>
 
 
-   <center><img src="images/logo.jpg"  style="width: 50%;"></center>
+   <center><img src="images/logo.jpg"  style="width: 50%; margin-top: 40px"></center>
    <section class="products">
       <h1 class="title" style="color: #fff">Services Offered</h1>
 
