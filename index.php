@@ -394,8 +394,8 @@ ul.dropdown-menu li:hover {
 
 </head>
 
-<body>
-   <nav>
+<body style="background-image: linear-gradient(#A70D2A, #686A6C);">
+   <nav style="background-color: #333333">
       <!-- <div class="logo">
                 <a href="index.html">
                     <img src="Pictures\Logo DesignK whitegreen.png" alt="DesignK" height="50px" width="200px">
