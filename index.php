@@ -395,7 +395,7 @@ ul.dropdown-menu li:hover {
 </head>
 
 <body>
-   <nav style="background-color: #333333; ">
+   <nav>
       <!-- <div class="logo">
                 <a href="index.html">
                     <img src="Pictures\Logo DesignK whitegreen.png" alt="DesignK" height="50px" width="200px">
