@@ -382,7 +382,7 @@ ul.dropdown-menu li:hover {
     <div class="flex">
 
         <div class="image">
-            <img src="images/logo.jpg" alt="" style="margin-right: 580px">
+        <img src="images/logo.jpg"  style="width: 100%;">
         </div>
 
         <div class="content-about">
