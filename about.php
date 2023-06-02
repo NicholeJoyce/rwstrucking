@@ -399,7 +399,7 @@ ul.dropdown-menu li:hover {
                <form action="" method="POST" class="boxabout">
                   <div class="name" style="   max-width: 1000px;
    border-radius: 20px;
-   width: auto;
+   width: 550px;
    height: auto;
    border:var(--border);
    padding:2rem;
