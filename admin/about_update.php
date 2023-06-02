@@ -46,6 +46,18 @@ if(isset($_POST['aboutcontent'])){
         width: 100%;
         background-color: #333333;
     }
+    .box-container-about{
+   color:var(--black);
+   text-align: justify;
+   box-shadow: var(--box-shadow);
+   border-radius: 2rem;
+   padding:39px;
+   background-color: var(--black);
+   color:var(--light-color);
+   border:1rem solid var(--black);
+   margin-top: 2rem;
+   font-size: 23px;
+    }
 </style>
 </head>
 <body>
@@ -88,6 +100,33 @@ if(isset($_POST['aboutcontent'])){
    
 
 <!-- </section>  -->
+<section class="show-products">
+<center><h1 style="font-size: 35px; color: #333333;">Updated About Content</h1></center>
+
+<center><div class="box-container-about">
+
+      <?php
+         $select_products = mysqli_query($conn, "SELECT * FROM `about`") or die('query failed');
+         if(mysqli_num_rows($select_products) > 0){
+            while($fetch_products = mysqli_fetch_assoc($select_products)){
+      ?>
+      <div class="box"> 
+         <!-- <img class="image" src="../uploaded_img/<//?php echo $fetch_products['image']; ?>" alt=""> -->
+         <!-- <div class="name"><//?php echo $fetch_products['name']; ?></div> -->
+         <div class="details"><?php echo $fetch_products['aboutcontent']; ?></div>
+         <!-- <a href="admin_update_product.php?update=<//?php echo $fetch_products['id']; ?>" class="option-btn">update</a> -->
+         <!-- <a href="admin_products.php?delete=<//?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a> -->
+      </div>
+      <?php
+         }
+      }else{
+         echo '<p class="empty">This page is yet to be updated by the admin!</p>';
+      }
+      ?>
+   </div></center>
+   
+
+ </section>
 
 
 

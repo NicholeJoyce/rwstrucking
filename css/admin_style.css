@@ -16,10 +16,9 @@
 *{
    font-family: 'Bruno Ace Sc';
    margin:0; padding:0;
-   box-sizing: border-box;
-   outline: none; border:none;
    text-decoration: none;
-   transition:all .2s linear;
+   overflow-y: scroll;
+   overflow-x: hidden;
    
 }
 
@@ -146,7 +145,7 @@ section{
    position: sticky;
    top:0; left:0; right:0;
    z-index: 1000;
-   background-color: var(--white);
+   background-color: var(--black);
    box-shadow: var(--box-shadow);
 }
 
