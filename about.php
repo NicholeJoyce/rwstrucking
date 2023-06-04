@@ -13,6 +13,7 @@ include 'config.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,10 +27,9 @@ include 'config.php';
    <link rel="stylesheet" href="css/style.css">
    <style>
       body {
-         background-image: linear-gradient(#A70D2A, #686A6C);
+         background-image: linear-gradient(#96273C, #686A6C);
          background-repeat: no-repeat;
          background-position: center;
-
          font-family: 'Bruno Ace Sc';
 
       }
@@ -53,38 +53,38 @@ include 'config.php';
       } */
 
       .dropdown {
-  position: relative;
-  display: inline-block;
-}
+         position: relative;
+         /* display: inline-block; */
+      }
 
-.dropdown ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  /* background-color: #fff; */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
-}
+      .dropdown ul {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         /* background-color: #fff; */
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+      }
 
-.dropdown:hover ul {
-  display: block;
-}
+      .dropdown:hover ul {
+         display: block;
+      }
 
-.dropdown ul li {
-  padding: 10px;
-}
+      /* .dropdown ul li {
+         padding: 10px;
+      } */
 
-.dropdown ul li a {
-  display: block;
-  text-decoration: none;
-  color: #000;
-  font-family: 'Bruno Ace SC';
-}
+      .dropdown ul li a {
+         display: block;
+         text-decoration: none;
+         color: #000;
+         font-family: 'Bruno Ace SC';
+      }
 
-/* .dropdown ul li a:hover {
+      /* .dropdown ul li a:hover {
   background-color: #f2f2f2;
 } */
 
@@ -314,124 +314,131 @@ include 'config.php';
             box-shadow: 0 1px 0 rgba(112, 102, 119, 0.5) inset;
          } */
       }
+
       /* Styling the dropdown menu */
-/* ul.dropdown-menu {
+      /* ul.dropdown-menu {
   display: none;  
   background-color: #f9f9f9;
   position: absolute;
 
 } */
 
-/* Show the dropdown menu on hover */
-ul.dropdown-menu li:hover {
+      /* Show the dropdown menu on hover */
+      /* ul.dropdown-menu li:hover {
   background-color: #e5e5e5;
-}
+} */
 
-/* Styling the hamburger menu icon */
-/* .dropdown a .dropdown-indicator {
+      /* Styling the hamburger menu icon */
+      /* .dropdown a .dropdown-indicator {
   margin-left: 5px;
 } */
 
-/* Show the dropdown menu on hover */
-.dropdown:hover ul.dropdown-menu {
-  display: block;
-}
+      /* Show the dropdown menu on hover */
+      .dropdown:hover ul.dropdown-menu {
+         display: block;
+         border-radius: 20px;
+         padding: 10px;
 
+      }
    </style>
 </head>
-<body>
-<nav style="background-color: #333333">
-      <!-- <div class="logo">
-                <a href="index.html">
-                    <img src="Pictures\Logo DesignK whitegreen.png" alt="DesignK" height="50px" width="200px">
-                </a>
-            </div> -->
 
-      <div class="navigation">
+<body>
+   <nav style="background-color: #333333">
+      <!-- <div class="logo">
+         <img src="images/logo.jpg" height="60px" width=auto style="margin-left: 45px">
+      </div> -->
+
+      <div class="navigation" style="margin-right: 40px">
          <input type="checkbox" class="toggle-menu">
          <div class="hamburger"></div>
 
          <ul class="menu">
-  <li><a href="index.php" ><b>Home</b></a></li>
-  <li><a href="about.php" class="activehome"><b>About</b></a></li>
-  <li class="dropdown">
-    <a href="#">
-      <span><b>More</b></span>
-      <!-- <i class="bi bi-chevron-down dropdown-indicator"></i> -->
-   </a>
-    <ul class="dropdown-menu">
-      <li><a href="services.php" style="font-family: 'Bruno Ace SC'">SERVICES</a></li>
-      <li><a href="contact.php" style="font-family: 'Bruno Ace SC'">CONTACT</a></li>
-    </ul>
-  </li>
-</ul>
+            <li><a href="index.php"><b>Home</b></a></li>
+            <li><a href="about.php" class="activehome"><b>About</b></a></li>
+            <li class="dropdown">
+               <a href="#">
+                  <span><b>More</b></span>
+                  <!-- <i class="bi bi-chevron-down dropdown-indicator"></i> -->
+               </a>
+               <ul class="dropdown-menu" style="background-image: linear-gradient(#A70D2A, #686A6C);">
+                  <li><a href="services.php" style="font-family: 'Bruno Ace SC'">SERVICES</a></li>
+                  <li><a href="contact.php" style="font-family: 'Bruno Ace SC'">CONTACT</a></li>
+               </ul>
+            </li>
+         </ul>
 
       </div>
    </nav>
 
-   
-<?php //@include 'header.php'; ?>
 
-<section class="heading">
-    <h3>about us</h3>
-    <p> <a href="home.php">home</a> / about </p>
-</section>
+   <?php //@include 'header.php'; 
+   ?>
 
-<section class="about">
+   <section class="heading">
+      <h3>about us</h3>
+      <p> <a href="home.php">home</a> / about </p>
+   </section>
 
-    <div class="flex">
-
-        <div class="image">
-        <img src="images/logo.jpg"  style="width: 100%;">
+   <!-- <div class="image">
+      <center>  <img src="images/logo.jpg"  style="width: auto; height: auto; margin-top: 40px"> </center>
         </div>
+<section class="about"> -->
 
-        <div class="content-about">
-            <!-- <h3>why choose us?</h3> -->
-            <br>
-            <section class="products">
-      <div class="box-container" style="color: #fff">
-
-         <?php
-         $select_products = mysqli_query($conn, "SELECT * FROM `about` LIMIT 6") or die('query failed') ;
-         if (mysqli_num_rows($select_products) > 0) {
-             ($fetch_products = mysqli_fetch_assoc($select_products)) 
-         ?>
-               <form action="" method="POST" class="boxabout">
-                  <div class="name" style="   max-width: 1000px;
+   <!-- style="   max-width: 1000px;
    border-radius: 20px;
-   width: 550px;
-   height: auto;
+   width: 100%;
+   height: 100%;
    border:var(--border);
    padding:2rem;
    text-align: center;
-   margin: auto;
-   box-shadow: var(--box-shadow); color: #fff"><?php echo $fetch_products['aboutcontent']; ?></div>
-               </form>
-         <?php
-            }
-          else {
-            echo '<p class="empty">this page is yet to be updated by the owner!</p>';
-         }
-         ?>
-         </selection>
+  
+   box-shadow: var(--box-shadow); color: #fff" -->
+
+   <div class="flex">
 
 
-            <!-- <p>Our trucking service is the result of a relentless pursuit of success. We did not just stumble upon this industry and become an overnight success. No, it took years of hard work, determination, and perseverance to get to where we are today. Starting a business is never easy. We faced many challenges along the way, from financial struggles to operational setbacks. But we never gave up. We kept trying and trying until we found our footing in the trucking industry. We knew that success would not come easy, but we were willing to put in the effort. We worked long hours, made sacrifices, and took risks to build our company from the ground up. And it was not just about making money; we were passionate about the industry and wanted to provide the best possible service to our clients. Through our dedication and hard work, we slowly but surely began to establish ourselves as a reliable and trustworthy trucking service. Our clients started to take notice of our commitment to excellence and began to refer us to others. And now, we are proud to say that we have settled into our place in the trucking industry. But that does not mean we are done striving for success. We are constantly looking for ways to improve and grow, to better serve our clients and to stay ahead of the competition.</p> -->
-            <a href="contact.php" class="btn" style=" text-align: center">INQUIRE</a>
-        </div>
+      <center>
+         <div class="content-about">
+            <!-- <h3>why choose us?</h3> -->
+            <br>
+            <section class="products">
+               <div class="box-container-about" style="color: #fff;">
 
-    </div>
+                  <?php
+                  $select_products = mysqli_query($conn, "SELECT * FROM `about` LIMIT 6") or die('query failed');
+                  if (mysqli_num_rows($select_products) > 0) {
+                     ($fetch_products = mysqli_fetch_assoc($select_products))
+                  ?>
+                     <form action="" method="POST" class="boxabout">
+                        <div class="name" style="color:#fff"><?php echo $fetch_products['aboutcontent']; ?></div>
+                     </form>
+                  <?php
+                  } else {
+                     echo '<p class="empty">this page is yet to be updated by the owner!</p>';
+                  }
+                  ?>
+                  </selection>
 
-    
-    </div>
 
-</section>
+                  <!-- <p>Our trucking service is the result of a relentless pursuit of success. We did not just stumble upon this industry and become an overnight success. No, it took years of hard work, determination, and perseverance to get to where we are today. Starting a business is never easy. We faced many challenges along the way, from financial struggles to operational setbacks. But we never gave up. We kept trying and trying until we found our footing in the trucking industry. We knew that success would not come easy, but we were willing to put in the effort. We worked long hours, made sacrifices, and took risks to build our company from the ground up. And it was not just about making money; we were passionate about the industry and wanted to provide the best possible service to our clients. Through our dedication and hard work, we slowly but surely began to establish ourselves as a reliable and trustworthy trucking service. Our clients started to take notice of our commitment to excellence and began to refer us to others. And now, we are proud to say that we have settled into our place in the trucking industry. But that does not mean we are done striving for success. We are constantly looking for ways to improve and grow, to better serve our clients and to stay ahead of the competition.</p> -->
+                  <a href="contact.php" class="btn" style=" text-align: center">INQUIRE</a>
+               </div>
+
+         </div>
+      </center>
+
+
+   </div>
+
+   </section>
 
 
 
-<?php @include 'footer.php'; ?>
+   <?php @include 'footer.php'; ?>
 
-<script src="js/script.js"></script>
+   <script src="js/script.js"></script>
 
 </body>
+
 </html>

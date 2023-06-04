@@ -369,12 +369,13 @@ section{
 
 .content-about{
    color: #ccc;
-   text-align: justify;
+   text-align: center;
    font-size: 1.5rem;
-   max-width: 60rem;
-   margin:1rem auto;
+   max-width: 70rem;
+   margin:2rem;
    line-height:2;
-   font-size: 1.7rem;
+   font-size: 2rem;
+   border:var(--border);
 
 }
 .home .content{
@@ -394,8 +395,7 @@ section{
    font-size: 1.7rem;
    color:var(--light-color);
 }
-
-.products .box-container{
+.products .box-container {
    max-width: 1200px;
    margin:0 auto;
    display: grid;
@@ -403,6 +403,13 @@ section{
    gap:1.5rem;
    align-items: flex-start;
    justify-content: center;
+}
+
+.box-container-about{
+   border-radius: 10px;
+   padding:1rem;
+   text-align: center;
+   position: relative;
 }
 
 .products .box-container .box{
@@ -549,8 +556,8 @@ section{
 }
 
 .about .flex{
-   max-width: 1200px;
-   margin:0 auto;
+   max-width: 1500px;
+   margin:0 auto; 
    display: flex;
    align-items: center;
    flex-wrap: wrap;
@@ -579,7 +586,7 @@ section{
 .about .flex .content p{
    padding:1rem 0;
    font-size: 1.5rem;
-   color:var(--light-color);
+   color: #ffffff;
    line-height: 2;
 }
 

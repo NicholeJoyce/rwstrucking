@@ -101,8 +101,6 @@ if(isset($_GET['delete'])){
    
 </section>
 
-
-
 <section class="show-products">
 
    <div class="box-container">

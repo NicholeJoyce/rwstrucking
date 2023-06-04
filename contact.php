@@ -49,7 +49,7 @@ if(isset($_POST['send'])){
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <style>
       body {
-         background-image: linear-gradient(#A70D2A, #686A6C);
+         background-image: linear-gradient(#96273C, #686A6C);
          background-repeat: no-repeat;
          background-position: center;
 
@@ -346,9 +346,9 @@ if(isset($_POST['send'])){
 } */
 
 /* Show the dropdown menu on hover */
-ul.dropdown-menu li:hover {
+/* ul.dropdown-menu li:hover {
   background-color: #e5e5e5;
-}
+} */
 
 /* Styling the hamburger menu icon */
 /* .dropdown a .dropdown-indicator {
@@ -358,19 +358,19 @@ ul.dropdown-menu li:hover {
 /* Show the dropdown menu on hover */
 .dropdown:hover ul.dropdown-menu {
   display: block;
+  border-radius: 20px;
+  padding: 2px;
 }
 
    </style>
 </head>
 <body>
 <nav style="background-color: #333333">
-      <!-- <div class="logo">
-                <a href="index.html">
-                    <img src="Pictures\Logo DesignK whitegreen.png" alt="DesignK" height="50px" width="200px">
-                </a>
-            </div> -->
+<!-- <div class="logo">
+         <img src="images/logo.jpg" height="60px" width=auto style="margin-left: 45px">
+      </div> -->
 
-      <div class="navigation">
+      <div class="navigation" style="margin-right: 40px">
          <input type="checkbox" class="toggle-menu">
          <div class="hamburger"></div>
 
@@ -382,9 +382,9 @@ ul.dropdown-menu li:hover {
       <span><b>More</b></span>
       <!-- <i class="bi bi-chevron-down dropdown-indicator"></i> -->
    </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu" style="background-image: linear-gradient(#A70D2A, #686A6C);">
       <li><a href="services.php" style="font-family: 'Bruno Ace SC'">SERVICES</a></li>
-      <li><a href="contact.php" style="font-family: 'Bruno Ace SC'" class="activehome">CONTACT</a></li>
+      <li><a href="contact.php" style="font-family: 'Bruno Ace SC'" class="active">CONTACT</a></li>
     </ul>
   </li>
 </ul>

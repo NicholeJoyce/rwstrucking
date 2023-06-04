@@ -79,7 +79,7 @@ if (isset($_POST['add_to_cart'])) {
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,900&display=swap" rel="stylesheet">
    <style>
       body {
-         background-image: linear-gradient(#A70D2A, #686A6C);
+         background-image: linear-gradient(#96273C, #686A6C);
          background-repeat: no-repeat;
          background-position: center;
 
@@ -106,44 +106,44 @@ if (isset($_POST['add_to_cart'])) {
       } */
 
       .dropdown {
-  position: relative;
-  display: inline-block;
-}
+         position: relative;
+         display: inline-block;
+      }
 
-.dropdown ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  /* background-color: #fff; */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
-}
+      .dropdown ul {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         /* background-color: #fff; */
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+      }
 
-.dropdown:hover ul {
+      /* .dropdown:hover ul {
   display: block;
-}
-
+} */
+      /* 
 .dropdown ul li {
   padding: 10px;
-}
+} */
 
-.dropdown ul li a {
-  display: block;
-  text-decoration: none;
-  color: #000;
-  font-family: 'Bruno Ace SC';
-}
+      .dropdown ul li a {
+         display: block;
+         text-decoration: none;
+         color: #000;
+         font-family: 'Bruno Ace SC';
+      }
 
-/* .dropdown ul li a:hover {
+      /* .dropdown ul li a:hover {
   background-color: #f2f2f2;
 } */
 
 
       /* HUMBERGER */
-      @font-face {
+      /* @font-face {
          font-family: 'Poppins';
          src: url(Fonts/Poppins-Regular.ttf);
       }
@@ -156,20 +156,21 @@ if (isset($_POST['add_to_cart'])) {
       @font-face {
          font-family: 'DancingScript';
          src: url(Fonts/DancingScript-VariableFont_wght.ttf);
-      }
+      } */
 
       * {
          padding: 0;
          margin: 0;
          color: #A6808C;
-         box-sizing: border-box;
+         /* box-sizing: border-box; */
       }
 
+      /* 
       body {
          background-color: #565264;
          font-family: Poppins;
          margin-top: 5%;
-      }
+      } */
 
       html {
          overflow-y: scroll;
@@ -188,7 +189,7 @@ if (isset($_POST['add_to_cart'])) {
          height: 80px;
          padding: 10px 90px;
          box-sizing: border-box;
-         background: rgba(0, 0, 0, 0.4);
+         /* background: rgba(0, 0, 0, 0.4); */
          /* border-bottom: 0px solid #fff; */
          z-index: 9999
       }
@@ -204,7 +205,6 @@ if (isset($_POST['add_to_cart'])) {
          list-style: none;
          float: right;
          margin: 0;
-         padding: 0;
          display: flex;
       }
 
@@ -216,16 +216,16 @@ if (isset($_POST['add_to_cart'])) {
          font-size: 25px;
       }
 
-      nav ul li a:hover {
+      /* nav ul li a:hover {
          background: rgba(0, 0, 0, 0.1);
          border-radius: 5px;
-      }
+      } */
 
       .text {
          font-size: 2rem;
          padding: 2rem;
          background-color: #565264;
-         color: whitesmoke;
+         color: #fff;
       }
 
       .title {
@@ -235,7 +235,7 @@ if (isset($_POST['add_to_cart'])) {
       }
 
 
-      .background {
+      /* .background {
          position: absolute;
          height: 100%;
          width: 100%;
@@ -243,9 +243,9 @@ if (isset($_POST['add_to_cart'])) {
          z-index: -1;
          transform: translateZ(-10px) scale(3);
          background-repeat: no-repeat;
-      }
+      } */
 
-      header {
+      /* header {
          position: relative;
          display: flex;
          justify-content: center;
@@ -253,15 +253,15 @@ if (isset($_POST['add_to_cart'])) {
          height: 100%;
          transform-style: preserve-3d;
          z-index: -1;
-      }
+      } */
 
 
-      .wrapper {
+      /* .wrapper {
          height: 100vh;
          overflow-y: auto;
          overflow-x: hidden;
          perspective: 10px;
-      }
+      } */
 
       .hamburger {
          margin-top: 25px;
@@ -272,7 +272,7 @@ if (isset($_POST['add_to_cart'])) {
          border-radius: 10px;
          cursor: pointer;
          z-index: 2;
-         transition: 0.3s;
+         transition: 0.2s;
       }
 
       .hamburger:before,
@@ -283,7 +283,7 @@ if (isset($_POST['add_to_cart'])) {
          right: 0;
          background: #fff;
          border-radius: 10px;
-         transition: 0.3s;
+         transition: 0.2s;
 
       }
 
@@ -367,88 +367,86 @@ if (isset($_POST['add_to_cart'])) {
             box-shadow: 0 1px 0 rgba(112, 102, 119, 0.5) inset;
          } */
       }
+
       /* Styling the dropdown menu */
-/* ul.dropdown-menu {
+      /* ul.dropdown-menu {
   display: none;  
   background-color: #f9f9f9;
   position: absolute;
 
 } */
 
-/* Show the dropdown menu on hover */
-ul.dropdown-menu li:hover {
+      /* Show the dropdown menu on hover */
+      /* ul.dropdown-menu li:hover {
   background-color: #e5e5e5;
-}
+} */
 
-/* Styling the hamburger menu icon */
-/* .dropdown a .dropdown-indicator {
+      /* Styling the hamburger menu icon */
+      /* .dropdown a .dropdown-indicator {
   margin-left: 5px;
 } */
 
-/* Show the dropdown menu on hover */
-.dropdown:hover ul.dropdown-menu {
-  display: block;
-}
+      /* Show the dropdown menu on hover */
+      .dropdown:hover ul.dropdown-menu {
+         display: block;
+         border-radius: 20px;
+         padding: 10px;
+      }
+      .box-container-profile{
+         width: auto;
 
+      }
    </style>
 
 </head>
 
 <body style="background-image: linear-gradient(#A70D2A, #686A6C);">
-   <nav style="background-color: #333333">
+   <nav style="background-color: #333333;">
       <!-- <div class="logo">
-                <a href="index.html">
-                    <img src="Pictures\Logo DesignK whitegreen.png" alt="DesignK" height="50px" width="200px">
-                </a>
-            </div> -->
+         <img src="images/logo.jpg" height="60px" width=auto style="margin-left: 45px">
+      </div> -->
 
-      <div class="navigation" >
-         <input type="checkbox" class="toggle-menu" >
+      <div class="navigation" style="margin-right: 40px; color:#fff">
+         <input type="checkbox" class="toggle-menu">
          <div class="hamburger"></div>
 
-         <ul class="menu" >
-  <li><a href="index.php" class="activehome" style="color: #fff" ><b>Home</b></a></li>
-  <li><a href="about.php" style="color: #fff" ><b>About</b></a></li>
-  <li class="dropdown" style="color: #fff" >
-    <a href="#">
-      <span><b>More</b></span>
-      <!-- <i class="bi bi-chevron-down dropdown-indicator"></i> -->
-   </a>
-    <ul class="dropdown" >
-      <li><a href="services.php" style="font-family: 'Bruno Ace SC'; color: #fff">SERVICES</a></li>
-      <li><a href="contact.php" style="font-family: 'Bruno Ace SC'; color: #fff">CONTACT</a></li>
-    </ul>
-  </li>
-</ul>
+         <ul class="menu">
+            <li><a href="index.php" class="activehome" style="color: #fff"><b>Home</b></a></li>
+            <li><a href="about.php" style="color: #fff"><b>About</b></a></li>
+            <li class="dropdown" style="color: #fff">
+               <a href="#">
+                  <span><b>More</b></span>
+                  <!-- <i class="bi bi-chevron-down dropdown-indicator"></i> -->
+               </a>
+               <ul class="dropdown-menu" style="background-image: linear-gradient(#A70D2A, #686A6C);">
+                  <li><a href="services.php" style="font-family: 'Bruno Ace SC'; color: #fff">SERVICES</a></li>
+                  <li><a href="contact.php" style="font-family: 'Bruno Ace SC'; color: #fff">CONTACT</a></li>
+               </ul>
+            </li>
+         </ul>
 
       </div>
    </nav>
-
-
-
-   <!-- <div class="wrapper">
-            <header>
-                <img src="Pictures/LakeandMoutains.jpg" class="background">
-                <h1 class="title">Welcome!</h1>
-            </header> -->
-
-
-
-   <!-- <section class="text">
-            <h3>Essay on Mountains</h3>
-    
-    </section> -->
-
    </div>
-
-
-   <?php //@include 'header.php'; 
-   ?>
-
-
-   <center><img src="images/logo.jpg"  style="width: 50%; margin-top: 40px"></center>
+   <center><div class="box-container-profile" style="margin-top: 100px"> -->
+      <?php
+      $select_products = mysqli_query($conn, "SELECT * FROM `profile` LIMIT 6") or die('query failed');
+      if (mysqli_num_rows($select_products) > 0) {
+         ($fetch_products = mysqli_fetch_assoc($select_products))
+      ?>
+         <form action="" method="POST" class="box-container-profile">
+            <img src="uploaded_img/<?php echo $fetch_products['profilepic']; ?>">
+         </form>
+      <?php
+      } else {
+         echo '<p class="empty">no profile picture added yet!</p>';
+      }
+      ?>
+   </div></center>
+   <!-- <center><img src="images/logo.jpg" style="width: 50%; margin-top: 100px"></center> -->
    <section class="products">
-      <h1 class="title" style="color: #fff">Services Offered</h1>
+   
+      <h1 class="title" style="color: #fff;">Services Offered</h1>
 
       <div class="box-container">
 
