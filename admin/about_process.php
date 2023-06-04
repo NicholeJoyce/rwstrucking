@@ -59,7 +59,7 @@ if(isset($_POST['aboutcontent_btn'])){
    //   ($fetch_products = mysqli_fetch_assoc($select_products))
 ?>
 
-<form action="" method="post" enctype="multipart/form-data">
+<form action="" method="post" enctype="multipart/form-data" style="margin-top: 80px">
   <img src="image/logo.jpg" alt="">
 <h3>Updated Successfully</h3>
    <!-- <input type="text" class="box" value="" required name="aboutcontent"> -->
