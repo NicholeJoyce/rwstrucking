@@ -428,7 +428,7 @@ if (isset($_POST['add_to_cart'])) {
       </div>
    </nav>
    </div>
-   <center><div class="box-container-profile" style="margin-top: 100px"> -->
+   <center><div class="box-container-profile" style="margin-top: 100px">
       <?php
       $select_products = mysqli_query($conn, "SELECT * FROM `profile` LIMIT 6") or die('query failed');
       if (mysqli_num_rows($select_products) > 0) {

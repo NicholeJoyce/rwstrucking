@@ -409,7 +409,7 @@ if(isset($_POST['send'])){
 
           <div class="col-lg-3"> 
             <div class="info-item d-flex">
-            <i class="material-icons" style="font-size:36px">location_on</i>
+            <i class="material-icons" style="font-size:36px; color: #F72C51">location_on</i>
               <div>
                 <h4>Location: </h4>
                 <p> 1486 Aldama St., Sta Barbara, Baliuag, Bulacan 3006</p>
@@ -421,10 +421,21 @@ if(isset($_POST['send'])){
 
           <div class="col-lg-3"> 
              <div class="info-item d-flex">
-            <i class="material-icons" style="font-size:36px">email</i>
+            <i class="material-icons" style="font-size:36px; color: #fff">email</i>
               <div>
                 <h4>Email:</h4>
                 <p>rwstruckingservices@gmail.com</p>
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3"> 
+             <div class="info-item d-flex">
+             <i class='fab fa-facebook' style='font-size:36px; color: #0771E7'><a href="https://www.facebook.com/profile.php?id=100084048667524"></a></i>
+              <div>
+                <h4>Facebook:</h4>
+                <p><a href="https://www.facebook.com/profile.php?id=100084048667524" style="text-decoration: underline; color:#0771E7">RWS Trucking Services</a></p>
                 <br>
               </div>
             </div>
